@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    text-align: center;
+}
+
+input{
+    width: 80px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: black;
+}
+
+input#red{
+    background-color: red;
+    
+}
+input#red:hover{
+    background-color: darkred;
+}
+input#yellow{
+    background-color: yellow;
+}
+input#yellow:hover{
+    background-color: rgb(180, 180, 0);
+}
+input#green{
+    background-color: green;
+}
+input#green:hover{
+    background-color: darkgreen;
+}
+input#automatic{
+    background-image: linear-gradient(to right, red, yellow, green);
+}
