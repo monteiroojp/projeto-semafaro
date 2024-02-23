@@ -1,3 +1,5 @@
-const example = {
-    ex01 : () => num1 * num2
-}
+let array = ['eu' , 'fui' , 'para' , 'roma']
+
+console.log(array.join(' '))
+
+console.log(array.reverse())
