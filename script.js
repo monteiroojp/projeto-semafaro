@@ -1,17 +1,22 @@
-const img = window.document.getElementById('sem')
+let image = document.querySelector("img#sem")
+let buttons = document.querySelector('div#buttons')
 
-const buttons = window.document.getElementById('buttons')
+const trafficLight = (Event) =>{
 
-
-const trafficLight = (event) => {
-    turOn[event.target.id]()
+const changecolor = () => {
     
 }
-
-const turOn = {
-    red : () => img.src = 'imagens/vermelho.png',
-    yellow  : () => img.src = 'imagens/amarelo.png',
-    green : () => img.src = 'imagens/verde.png'
+    
+let colors = {
+    red: () => image.src = 'imagens/vermelho.png',
+    green: () => image.src = 'imagens/verde.png',
+    yellow: () => image.src = 'imagens/amarelo.png',
+    automatic: () => changecolor()
+}  
+    var choosedButton = colors[Event.target.id]
+    colors[Event.target.id]() 
+      
+    
     
 }
 
